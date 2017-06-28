@@ -1,0 +1,8 @@
+POC\Entity\Address:
+    address:
+        country: <country()>
+        city: <city()>
+
+POC\Entity\Person:
+    person:
+        __factory: { createWithAddress: [ "@address" ] }
